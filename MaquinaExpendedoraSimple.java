@@ -1,4 +1,4 @@
-public class MaquinaExpendedoraSimple {
+public class  MaquinaExpendedoraSimple {
     
     // El precio del billete
     private int precioBillete;
@@ -17,11 +17,10 @@ public class MaquinaExpendedoraSimple {
      * del billete que se recibe es mayor que 0.
      */
     public MaquinaExpendedoraSimple(int precioDelBillete, String origen, String destino) {
-        precioBillete = precioDelBillete;
-        balanceClienteActual = 0;
-        totalDineroAcumulado = 0;
+        precioBillete = 20;
+    
         estacionOrigen = origen;
-        estacionDestino = destino;
+        estacionDestino = "Leon";
     }
 
     /**
@@ -55,7 +54,7 @@ public class MaquinaExpendedoraSimple {
         System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
         System.out.println("# " + precioBillete + " euros.");
         System.out.println("##################");
-        System.out.println();
+        System.out.println();   
 
         // Actualiza el total de dinero acumulado en la maquina
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
