@@ -19,7 +19,8 @@ public class  MaquinaExpendedoraSimple {
      */
     public MaquinaExpendedoraSimple () {
         precioBillete = 20;
-    
+        balanceClienteActual= 0;
+        totalDineroAcumulado= 0;
         estacionOrigen = "León";
         estacionDestino = "madrid";
     }
