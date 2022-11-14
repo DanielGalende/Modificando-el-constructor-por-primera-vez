@@ -17,6 +17,19 @@ public class  MaquinaExpendedoraSimple {
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
+    public MaquinaExpendedoraSimple (int precioBillete, String Destino) {
+        precioBillete = precioBillete;
+        balanceClienteActual= 0;
+        totalDineroAcumulado= 0;
+        estacionOrigen = "León";
+        estacionDestino = Destino;
+    }
+    
+    /**
+     * Crea una maquina expendedora de billetes de tren con el 
+     * precio del billete y el origen y destino dados. Se asume que el precio
+     * del billete que se recibe es mayor que 0.
+     */
     public MaquinaExpendedoraSimple () {
         precioBillete = 20;
         balanceClienteActual= 0;
@@ -24,7 +37,6 @@ public class  MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = "madrid";
     }
-    
     /**
      * Devuelve el precio del billete
      */
