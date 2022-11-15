@@ -48,7 +48,14 @@ public class  MaquinaExpendedoraSimple {
     
     
     /**
-     * Permite cambiar el precio del billete
+     * Extrae el dinero del deposito
+     */
+    public void vaciarDepositoDinero (){
+         totalDineroAcumulado = 0;
+    }
+    
+    /**
+     * Permite restar el precio del billete
      */
     public void reducirPrecioBillete(int cantidadarestar) {
          precioBillete = precioBillete - cantidadarestar;
